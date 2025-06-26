@@ -1,0 +1,199 @@
+/* ItemCard.module.css */
+.itemCard {
+  border: 1px solid #e1e8ed;
+  border-left: 4px solid #3498db;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  transition: background-color 0.2s ease, box-shadow 0.3s ease;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.itemCard:hover {
+  background-color: #f8fbff;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
+  transform: translateY(-2px);
+}
+
+.highlyRated {
+  border-left-color: #f39c12;
+}
+
+.topRatedBadge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: #f39c12;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.headerRight {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemName {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #2980b9;
+  font-weight: 600;
+}
+
+.instructor {
+  color: #555;
+  font-style: italic;
+  margin: 0;
+}
+
+.description {
+  margin: 0 0 1.5rem 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 95%;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.metaContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #f8fbfd;
+  padding: 0.875rem;
+  border-radius: 8px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.metaLabel {
+  font-weight: 600;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.metaValue {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #27ae60;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.tag {
+  background-color: #eef2f7;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: #3498db;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.tag:hover {
+  background-color: #ddeaf7;
+  border-color: #3498db;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.available {
+  color: #27ae60;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.available::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #27ae60;
+}
+
+.notAvailable {
+  color: #e74c3c;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.notAvailable::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+}
+
+.rating {
+  color: #f39c12;
+  display: flex;
+  align-items: center;
+}
+
+.rating::after {
+  content: "★";
+  margin-left: 0.25rem;
+}
+
+.enrollmentCount .enrollmentNumber {
+  font-weight: 700;
+  color: #3498db;
+}

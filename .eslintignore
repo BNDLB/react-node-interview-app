@@ -1,0 +1,11 @@
+# Directories
+node_modules/
+dist/
+build/
+coverage/
+public/
+
+# Files
+*.min.js
+*.min.css
+vite.config.ts
